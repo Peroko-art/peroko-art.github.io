@@ -92,126 +92,6 @@ p{
 
 .thoughts{
 	white-space: normal;
-	width: 45%;
-	vertical-align: middle;
-	background-color:#d6ccff;
-	font-size:15px;
-	display: inline-block;
-}
-
-footer {
-    height: 6%;
-    background: #eee;
-	text-align:center;
-	color:white;
-	background-color:#371f8e;
-}
-
-#egg{
-	height:500px; 
-	margin: 25px
-}
-
-.hallintro{
-	white-space: normal;
-	vertical-align: middle;
-	background-color:#d6ccff;
-}@media screen and (min-width: 80rem) {
-  .container {
-    margin: 1em 2em;
-  }
-}
-
-.dropbtn {
-  background-color: white;
-  color: #371f8e;
-  padding: 20px;
-  font-size: 250%;
-  border: none;
-  cursor: pointer;
-  font-family: 'Courier New';
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  float:right;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- }
-
-.dropdown-content a {
-  color: #371f8e;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ebe6ff; position:relative; text-decoration:none}
-
-.dropdown:hover .dropdown-content {display: block; text-align:center; right:100%}
-
-.dropdown:hover .dropbtn {background-color: #d6ccff; float:right; position: fixed;}
-
-
-body {
-	background-color: #ad96ff;
-	color:#371f8e;
-	font-family: 'Courier New';
-}
-
-html{
-	font-family: 'Courier New';
-}
-
-h1 {
-	text-align: center;
-	font-size: 350%;
-}
-
-p{
-	font-size:30px;
-}
-
-.submit{
-	position: relative;
-	float:center;
-	margin: 50px 50px 0px;
-	color: #371f8e;
-	cursor: pointer;
-	font-size: 100%;
-}
-
-.pfplink{
-	position: relative;
-	float:left;
-}
-
-.linkeroos{
-	text-decoration: none;
-	margin:10px;
-}
-
-.picturelinkslinks{
-	text-decoration: none;
-}
-
-.picturelinks{
-	height:150px;
-	margin: 25px;
-}
-
-.thoughts{
-	white-space: normal;
-	width: 45%;
-	vertical-align: middle;
 	background-color:#d6ccff;
 	font-size:15px;
 	display: inline-block;
@@ -235,3 +115,20 @@ footer {
 	vertical-align: middle;
 	background-color:#d6ccff;
 }
+
+figure {
+  display: table;
+}
+
+figcaption {
+  caption-side: bottom;
+  background-color:#d6ccff;
+  width:45%
+}
+
+        .figure-container1 {
+            display: flex;
+            justify-content: space-between; /* Adjust spacing between figures */
+            align-items: flex-start; /* Align figures by their tops */
+            gap: 20px; /* Optional: Adds consistent spacing between figures */
+        }
