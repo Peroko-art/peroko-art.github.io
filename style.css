@@ -65,7 +65,7 @@ p{
 .submit{
 	position: relative;
 	float:center;
-	margin: 50px 75px 0px;
+	margin: 50px 50px 0px;
 	color: #371f8e;
 	cursor: pointer;
 	font-size: 100%;
@@ -81,15 +81,22 @@ p{
 	margin:10px;
 }
 
-.picturelinks{
+.picturelinkslinks{
 	text-decoration: none;
+}
+
+.picturelinks{
+	height:150px;
+	margin: 25px;
 }
 
 .thoughts{
 	white-space: normal;
-	width: 85%;
+	width: 45%;
 	vertical-align: middle;
 	background-color:#d6ccff;
+	font-size:15px;
+	display: inline-block;
 }
 
 footer {
@@ -98,4 +105,9 @@ footer {
 	text-align:center;
 	color:white;
 	background-color:#371f8e;
+}
+
+#egg{
+	height:500px; 
+	margin: 25px
 }

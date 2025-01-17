@@ -1,0 +1,7 @@
+- egg opening - closed, hover-open, click-half ate
+- self-designed background
+- new profile pic - linking to a video introducing myself (on YT)
+- stop explore button from moving around when hover
+- prettier footer
+- adjust to phone screen
+- pop up text when hover on icons/pictures
