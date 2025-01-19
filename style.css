@@ -7,41 +7,55 @@
 .dropbtn {
   background-color: white;
   color: #371f8e;
-  padding: 20px;
-  font-size: 250%;
+  font-size: 200%; /* Scales dynamically with screen size */
+  margin: 4%; /* Percentage-based margin for responsiveness */
   border: none;
   cursor: pointer;
   font-family: 'Courier New';
+  padding: 15%; /* Percentage-based padding for consistent spacing */
+  box-sizing: border-box; /* Ensures padding is included in the element's width */
 }
 
 .dropdown {
-  position: relative;
+  position: relative; /* Anchor the dropdown-content to this container */
   display: inline-block;
-  float:right;
-  cursor: pointer;
+  float: right; /* Align the dropdown to the right */
+  margin-right: 5%;
+  margin-bottom: 0%;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
+  display: none; /* Hidden by default */
+  position: absolute; /* Positioned relative to the parent dropdown */
   background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- }
+  min-width: 100%; /* Full width of the parent dropdown */
+  right: 0; /* Align to the right edge */
+  z-index: 1000; /* Ensures it appears above other elements */
+  border: 0.1rem solid #ddd; /* Border with scalable size */
+  box-sizing: border-box; /* Prevent width issues with padding */
+}
 
 .dropdown-content a {
   color: #371f8e;
-  padding: 12px 16px;
+  padding: 7% 10%; /* Percentage-based padding for responsiveness */
   text-decoration: none;
-  display: block;
+  text-align:center;
+  display: block; /* Stacks links vertically */
 }
 
-.dropdown-content a:hover {background-color: #ebe6ff; position:relative; text-decoration:none}
+.dropdown-content a:hover {
+  background-color: #ebe6ff;
+  text-decoration: none;
+}
 
-.dropdown:hover .dropdown-content {display: block; text-align:center; right:100%}
+.dropdown:hover .dropdown-content {
+  display: block; /* Show the dropdown on hover */
+}
 
-.dropdown:hover .dropbtn {background-color: #d6ccff; float:right; position: fixed;}
-
+.dropdown:hover .dropbtn {
+  background-color: #d6ccff; /* Hover effect */
+  color: #371f8e;
+}
 
 body {
 	background-color: #ad96ff;
