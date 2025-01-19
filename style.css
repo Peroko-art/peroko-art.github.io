@@ -18,8 +18,7 @@
 
 .dropdown {
   position: relative; /* Anchor the dropdown-content to this container */
-  display: inline-block;
-  float: right; /* Align the dropdown to the right */
+  display: inline-block; /* Align the dropdown to the right */
   margin-right: 5%;
   margin-bottom: 0%;
 }
