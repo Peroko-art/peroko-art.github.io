@@ -85,7 +85,7 @@ p{
 }
 
 .pfplink{
-	position: fixed;
+	position: relative;
 	float: left;
 }
 
