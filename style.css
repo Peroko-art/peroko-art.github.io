@@ -127,8 +127,9 @@ footer {
 }
 
 #egg{
-	height:500px; 
-	margin: 25px
+margin-left: auto;
+margin-right: auto;
+size:50%;
 }
 
 .hallintro{
