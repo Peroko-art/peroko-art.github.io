@@ -86,13 +86,24 @@ p{
 	margin:10px;
 }
 
-.picturelinkslinks{
-	text-decoration: none;
+.grid-container {
+  display: grid; /* Enable grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(15%, 1fr)); /* Responsive columns */
+  gap: 2%; /* Space between grid items */
+  justify-content: center; /* Center-align the grid */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in the grid container's width */
 }
 
-.picturelinks{
-	height:150px;
-	margin: 25px;
+.picturelinks {
+  width: 100%; /* Make each image scale to its grid cell */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  transition: transform 0.3s; /* Optional: Add a hover effect */
+}
+
+.picturelinks:hover {
+  transform: scale(1.05); /* Optional: Slightly enlarge image on hover */
 }
 
 .thoughts{
