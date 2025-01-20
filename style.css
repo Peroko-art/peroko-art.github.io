@@ -58,6 +58,7 @@ html{
 h1 {
 	text-align: center;
 	font-size: 350%;
+  margin-top: 20%; /* Push the heading down by 20% of the container height */
 }
 
 p{
@@ -99,7 +100,6 @@ p{
 .picturelinks {
   width: 100%; /* Make each image scale to its grid cell */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 5px; /* Optional: Add rounded corners */
   transition: transform 0.3s; /* Optional: Add a hover effect */
 }
 
