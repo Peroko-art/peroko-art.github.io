@@ -98,16 +98,6 @@ p{
   flex: 0;
 }
 
-.pfplink{
-	position: absolute;
-	float: left;
-}
-
-.pfppic{
-	width:auto;
-  flex: 0;
-  height: auto;
-}
 
 .linkeroos{
 	text-decoration: none;
