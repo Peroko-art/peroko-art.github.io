@@ -73,7 +73,7 @@ html{
 h1 {
 	text-align: center;
 	font-size: 350%;
-  margin-top: 20%; /* Push the heading down by 20% of the container height */
+  margin-top: 15%; /* Push the heading down by 20% of the container height */
 }
 
 p{
