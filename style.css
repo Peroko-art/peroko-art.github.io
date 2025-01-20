@@ -57,7 +57,9 @@
   color: #371f8e;
 }
 
-
+.container-side-by-side{
+  width:100%;
+}
 
 
 body {
