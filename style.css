@@ -106,7 +106,7 @@ p{
 .pfppic{
 	width:auto;
   flex: 0;
-  height: 50px;
+  height: auto;
 }
 
 .linkeroos{
