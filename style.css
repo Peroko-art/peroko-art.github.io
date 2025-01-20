@@ -104,13 +104,12 @@ p{
 }
 
 .pfplink{
-	position: absolute;
+	position: fixed;
 	float: left;
 }
 
 .pfppic{
-
-  width:100%;
+	width:30%;
 	border-radius: 5%;
 }
 
