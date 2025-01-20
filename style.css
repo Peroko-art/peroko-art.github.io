@@ -145,7 +145,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 80%; /* Scales the image width to 50% of the container */
-  max-width: 300px; /* Ensures the image doesn't grow too large */
+  max-width: 600px; /* Ensures the image doesn't grow too large */
   height: auto; /* Maintains the aspect ratio */
   box-sizing: border-box; /* Avoids padding or borders affecting the size */
 }
