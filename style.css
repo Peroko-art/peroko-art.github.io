@@ -4,19 +4,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller columns for narrow screens */
-    gap: 12px; /* Reduce spacing */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* Single column layout for very small screens */
-  }
-}
-
 .dropbtn {
   background-color: white;
   color: #371f8e;
