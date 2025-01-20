@@ -90,13 +90,14 @@ p{
 }
 
 .pfplink{
-	position: fixed;
+	position: absolute;
 	float: left;
+  width:100%;
+	border-radius: 5%;
 }
 
 .pfppic{
-	width:25%;
-	border-radius: 5%;
+
 }
 
 .linkeroos{
