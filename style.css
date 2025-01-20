@@ -104,14 +104,14 @@ p{
 }
 
 .pfplink{
+
+}
+
+.pfppic{
 	position: absolute;
 	float: left;
   width:100%;
 	border-radius: 5%;
-}
-
-.pfppic{
-
 }
 
 .linkeroos{
