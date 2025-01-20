@@ -57,7 +57,14 @@
   color: #371f8e;
 }
 
-
+.container-side-by-side {
+  display: flex; /* Enables flexbox for this container */
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Distributes items evenly (left, center, right) */
+  width: 100%; /* Ensure it spans the full width of the page */
+  padding: 1%; /* Optional: Add some padding for spacing */
+  box-sizing: border-box; /* Ensure padding doesn’t cause overflow */
+}
 
 
 body {
@@ -88,6 +95,7 @@ p{
   transform: translateY(-50%);
   left: 50%;
   font-size: 80%;
+  flex: 0;
 }
 
 .pfplink{
@@ -97,7 +105,8 @@ p{
 
 .pfppic{
 	width:auto;
-	border-radius: 5%;
+  flex: 0;
+  height: 50px;
 }
 
 .linkeroos{
