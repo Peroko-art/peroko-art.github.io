@@ -19,8 +19,7 @@
 .dropdown {
   position: sticky; 
   display: inline-block;
-  float: right; 
-   right: 5%;
+  right: 5%;
 }
 
 .dropdown-content {
@@ -91,7 +90,7 @@ p{
   transform: translateY(-50%);
   font-size: 80%;
   flex: 0;
-   left: 2%;
+  left: 2%;
 }
 
 
@@ -128,8 +127,8 @@ p{
 }
 
 footer {
-    height: 6%;
-    background: #eee;
+  height: 6%;
+  background: #eee;
 	text-align:center;
 	color:white;
 	background-color:#371f8e;
@@ -162,9 +161,9 @@ figcaption {
   width:45%
 }
 
-        .figure-container1 {
-            display: flex;
-            justify-content: space-between; /* Adjust spacing between figures */
-            align-items: flex-start; /* Align figures by their tops */
-            gap: 2%; /* Optional: Adds consistent spacing between figures */
-        }
+.figure-container1 {
+  display: flex;
+  justify-content: space-between; /* Adjust spacing between figures */
+  align-items: flex-start; /* Align figures by their tops */
+  gap: 2%; /* Optional: Adds consistent spacing between figures */
+}       
