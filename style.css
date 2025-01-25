@@ -18,7 +18,6 @@
 
 .dropdown {
   position: sticky; 
-  display: inline-block;
   float:right;
   right: 5%;
 }
