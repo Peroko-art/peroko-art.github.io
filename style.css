@@ -168,3 +168,7 @@ figcaption {
   align-items: flex-start;
   gap: 2%; 
 }
+
+.lightscars {
+  max-width: 50%;
+}
