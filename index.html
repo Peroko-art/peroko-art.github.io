@@ -53,6 +53,40 @@
 
 <img src="lightscars.gif" alt="moving lightscars" class="lightscars">
 
+
+<div id="modalOverlay" class="modal-overlay"></div>
+<div id="modal" class="modal">
+  <p>Liminalities</p>
+  
+  <button class="close-btn" id="closeModal">Close</button>
+</div>
+
+<script>
+  // JavaScript to handle the modal
+  const modal = document.getElementById('modal');
+  const modalOverlay = document.getElementById('modalOverlay');
+  const openModal = document.getElementById('openModal');
+  const closeModal = document.getElementById('closeModal');
+
+  // Show modal
+  openModal.addEventListener('click', () => {
+	modal.style.display = 'block';
+	modalOverlay.style.display = 'block';
+  });
+
+  // Close modal
+  closeModal.addEventListener('click', () => {
+	modal.style.display = 'none';
+	modalOverlay.style.display = 'none';
+  });
+
+  // Close modal when clicking the overlay
+  modalOverlay.addEventListener('click', () => {
+	modal.style.display = 'none';
+	modalOverlay.style.display = 'none';
+  });
+
+
 <footer>
   <p>Stay delusional.</p>
 </footer>
