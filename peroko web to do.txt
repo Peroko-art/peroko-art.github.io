@@ -5,3 +5,4 @@
 - prettier footer
 - adjust to phone screen
 - pop up text when hover on icons/pictures
+- undertale
