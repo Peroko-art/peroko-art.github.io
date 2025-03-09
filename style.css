@@ -187,7 +187,6 @@ figcaption {
 }
 
 .modal {
-  cursor: pointer;
   overflow-y: auto;
   display: none; /* Hidden by default */
   position: fixed;
@@ -203,7 +202,6 @@ figcaption {
 
 /* Overlay for background */
 .modal-overlay {
-  cursor: pointer;
   overflow-y: auto;
   display: none;
   position: fixed;
