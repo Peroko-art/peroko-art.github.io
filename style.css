@@ -182,6 +182,7 @@ figcaption {
 }
 
 .modal {
+  cursor: pointer;
   display: none; /* Hidden by default */
   position: fixed;
   top: 50%;
