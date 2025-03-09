@@ -199,6 +199,7 @@ figcaption {
 
 /* Overlay for background */
 .modal-overlay {
+  overflow-y: auto;
   display: none;
   position: fixed;
   top: 0;
