@@ -175,6 +175,10 @@ figcaption {
 }
 
 .limipics{
+  overflow-y: auto; /* Enables vertical scrolling */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   max-width: 80%;
   max-height: 80%;
   object-fit: contain;
