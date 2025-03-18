@@ -20,6 +20,7 @@
   position: absolute; /* or fixed */
   top: 10px; /* Adjust as needed */
   right: 10px; /* Moves it to the right edge */
+  z-index: 1000; 
 }
 
 
