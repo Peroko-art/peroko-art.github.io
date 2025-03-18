@@ -191,6 +191,7 @@ figcaption {
   }
 
   .modal {
+    cursor: pointer;
     overflow-y: auto;  /* Enables vertical scrolling */
     display: none; /* Hidden by default */
     position: fixed;
@@ -223,6 +224,7 @@ figcaption {
 }
 
 .close-btn {
+  cursor: pointer;
   background: #e74c3c;
   color: white;
   border: none;
