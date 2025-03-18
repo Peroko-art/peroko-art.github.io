@@ -142,7 +142,7 @@ footer {
 #egg {
   max-width: 50%;
   height: auto;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .hallintro{
@@ -168,8 +168,17 @@ figcaption {
   gap: 2%; 
 }
 
+.figure-container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1%; 
+}
+
 .lightscars {
   max-width: 50%;
+  height: auto;
+  box-sizing: content-box;
 }
 
 .limipics {
