@@ -191,7 +191,6 @@ figcaption {
   }
 
   .modal {
-    cursor: pointer;
     overflow-y: auto;  /* Enables vertical scrolling */
     display: none; /* Hidden by default */
     position: fixed;
