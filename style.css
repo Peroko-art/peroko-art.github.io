@@ -17,11 +17,11 @@
 }
 
 .dropdown {
-  position: sticky;     
-
-  float:right;
-  right: 5%;
+  position: absolute; /* or fixed */
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Moves it to the right edge */
 }
+
 
 .dropdown-content {
   display: none;
