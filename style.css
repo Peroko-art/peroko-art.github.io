@@ -209,8 +209,6 @@ figcaption {
 
 /* Overlay for background */
 .modal-overlay {
-  cursor: pointer;
-
   overflow-y: auto;
   display: none;
   position: fixed;
