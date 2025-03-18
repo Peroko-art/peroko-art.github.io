@@ -36,11 +36,13 @@
 <body>
 <br>
 <br>
+<br>
+<br>
 <h1>Peroko's webpage<h1>
 
 <p>An archive of my own</p>
 
-<div class="figure-container2">
+
 <img
   id="egg"
   src="egg_closed.png"
@@ -51,12 +53,12 @@
 />
 
 <img src="lightscars.gif" alt="moving lightscars" class="lightscars">
-</div>
+
 
 <button id="openModal">LIMINALITIES</button>
 
-<div class="modal-overlay">
-<div class="modal">
+<div id="modalOverlay" class="modal-overlay" style="cursor: pointer"></div>
+<div id="modal" class="modal">
   <p>Liminalities</p>
 
   <img src="liminality 1.jpg" alt="liminality1" class="limipics">
@@ -68,8 +70,7 @@
   <img src="liminality 7.jpg" alt="liminality7" class="limipics">
   <img src="liminality 8.jpg" alt="liminality8" class="limipics">
 
-  <button class="close-btn">Close</button>
-</div>
+  <button class="close-btn" id="closeModal">Close</button>
 </div>
 
 <script>
