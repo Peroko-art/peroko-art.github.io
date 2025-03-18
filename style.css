@@ -140,8 +140,7 @@ footer {
 }
 
 #egg {
-  width: 80%;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   box-sizing: border-box;
 }
@@ -170,7 +169,7 @@ figcaption {
 }
 
 .lightscars {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .limipics{
