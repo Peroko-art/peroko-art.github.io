@@ -20,17 +20,17 @@
  
 <div class="grid-container">
 	<input class="submit" type="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfwBBgxOO6vhaScJa6Yi4lkBJ5JhAuUAZ-jmxXqQs-1VwowVA/viewform?usp=sharing';" value="Something on your mind?" />
-</div>
-
-<div class="dropdown">
-  <button class="dropbtn">Explore</button>
-  <div id="myDropdown" class="dropdown-content">
-	<a href="index.html">main</a>
-	<a href="halloflove.html">hall of love</a>
-	<a href="blog.html">blog</a>
-	<a href="contact.html">contact</a>
-  </div>
-</div>
+	
+	<div class="dropdown">
+	  <button class="dropbtn">Explore</button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="index.html">main</a>
+		<a href="halloflove.html">hall of love</a>
+		<a href="blog.html">blog</a>
+		<a href="contact.html">contact</a>
+	  </div>
+	</div>
+</div>	
 
 </head>	
 <body>
@@ -54,11 +54,12 @@
 
 <img src="lightscars.gif" alt="moving lightscars" class="lightscars">
 
+<br>
 
-<button id="openModal" style="cursor: pointer;>LIMINALITIES</button>
+<button id="openModal">LIMINALITIES</button>
 
-<div class="modal-overlay" id="modalOverlay">
-  <div class="modal" id="modal">
+<div class="modal-overlay">
+<div class="modal">
   <p>Liminalities</p>
 
   <img src="liminality 1.jpg" alt="liminality1" class="limipics">
@@ -75,30 +76,36 @@
 
 
 <script>
-  // Get modal and overlay elements
-  const modal = document.getElementById('modal');
-  const modalOverlay = document.getElementById('modalOverlay');
+  const modal = document.querySelector('.modal');
+  const modalOverlay = document.querySelector('.modal-overlay');
   const openModal = document.getElementById('openModal');
   const closeModal = document.getElementById('closeModal');
 
-  // Function to show modal and prevent background scrolling
-  function showModal() {
+  // Prevent clicks inside the modal from closing it
+  modal.addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
+
+  // Show modal and close button
+  openModal.addEventListener('click', () => {
+    modal.classList.add('show');
     modal.style.display = 'block';
     modalOverlay.style.display = 'block';
-    document.body.style.overflow = 'hidden'; // Prevent background scroll
-  }
+  });
 
-  // Function to hide modal and restore scrolling
-  function hideModal() {
+  // Hide modal and close button
+  closeModal.addEventListener('click', () => {
+    modal.classList.remove('show');
     modal.style.display = 'none';
     modalOverlay.style.display = 'none';
-    document.body.style.overflow = 'auto'; // Restore background scroll
-  }
+  });
 
-  // Event listeners
-  openModal.addEventListener('click', showModal);
-  closeModal.addEventListener('click', hideModal);
-  modalOverlay.addEventListener('click', hideModal);
+  // Hide modal when clicking outside
+  modalOverlay.addEventListener('click', () => {
+    modal.classList.remove('show');
+    modal.style.display = 'none';
+    modalOverlay.style.display = 'none';
+  });
 </script>
 
 
