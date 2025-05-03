@@ -185,6 +185,7 @@ figcaption {
 }
 
 .modal {
+max-height: 90vh;
   overflow-y: auto;
   display: none; /* Hidden by default */
   position: fixed;
