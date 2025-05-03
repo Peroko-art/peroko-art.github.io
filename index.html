@@ -1,4 +1,11 @@
-s);}
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NGT1HQSQY1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	
 	  gtag('config', 'G-NGT1HQSQY1');
@@ -68,30 +75,32 @@ s);}
 
 
 <script>
-  // JavaScript to handle the modal
+  // Get modal and overlay elements
   const modal = document.getElementById('modal');
   const modalOverlay = document.getElementById('modalOverlay');
   const openModal = document.getElementById('openModal');
   const closeModal = document.getElementById('closeModal');
 
-  // Show modal
-  openModal.addEventListener('click', () => {
-	modal.style.display = 'block';
-	modalOverlay.style.display = 'block';
-  });
+  // Function to show modal and prevent background scrolling
+  function showModal() {
+    modal.style.display = 'block';
+    modalOverlay.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Prevent background scroll
+  }
 
-  // Close modal
-  closeModal.addEventListener('click', () => {
-	modal.style.display = 'none';
-	modalOverlay.style.display = 'none';
-  });
+  // Function to hide modal and restore scrolling
+  function hideModal() {
+    modal.style.display = 'none';
+    modalOverlay.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Restore background scroll
+  }
 
-  // Close modal when clicking the overlay
-  modalOverlay.addEventListener('click', () => {
-	modal.style.display = 'none';
-	modalOverlay.style.display = 'none';
-  });
+  // Event listeners
+  openModal.addEventListener('click', showModal);
+  closeModal.addEventListener('click', hideModal);
+  modalOverlay.addEventListener('click', hideModal);
 </script>
+
 
 <footer>
   <p>Stay delusional.</p>
