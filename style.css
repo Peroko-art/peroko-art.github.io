@@ -185,7 +185,6 @@ figcaption {
 }
 
 .modal {
-max-height: 90vh;
   overflow-y: auto;
   display: none; /* Hidden by default */
   position: fixed;
@@ -218,13 +217,9 @@ max-height: 90vh;
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
-}
-.grid-container {
-  position: relative;
+  display: none; /* hide by default */
 }
 
-.dropdown {
-  position: absolute;
-  top: 10%;
-  right: 2%;
+.modal.show .close-btn {
+  display: inline-block; /* show only when modal has 'show' class */
 }
