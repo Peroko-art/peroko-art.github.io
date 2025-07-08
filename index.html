@@ -62,20 +62,6 @@
   <button class="close-btn" id="closeModal">Close</button>
 </div>
 
-<img
-  id="egg"
-  src="egg_closed.png"
-  style="cursor: pointer"
-  onmouseover="this.src='egg_opened.png';"
-  onmouseout="this.src='egg_closed.png';"
-  onclick="this.src='egg_ate.png';"
-/>
-
-<img src="lightscars.gif" alt="moving lightscars" class="lightscars">
-
-<br>
-
-
 <script>
   const modal = document.querySelector('.modal');
   const modalOverlay = document.querySelector('.modal-overlay');
@@ -108,6 +94,20 @@
     modalOverlay.style.display = 'none';
   });
 </script>
+
+
+<img
+  id="egg"
+  src="egg_closed.png"
+  style="cursor: pointer"
+  onmouseover="this.src='egg_opened.png';"
+  onmouseout="this.src='egg_closed.png';"
+  onclick="this.src='egg_ate.png';"
+/>
+
+<img src="lightscars.gif" alt="moving lightscars" class="lightscars">
+
+<br>
 
 
 <footer>
