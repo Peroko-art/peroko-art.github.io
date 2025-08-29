@@ -1,124 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NGT1HQSQY1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-NGT1HQSQY1');
-	</script>
+	<title>Peroko's 2000s Style Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="29rhL8yF_fAaUk" async></script>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-<link rel="stylesheet" href="style.css">
-
- 
-<div class="container-side-by-side">
-	<input class="submit" type="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfwBBgxOO6vhaScJa6Yi4lkBJ5JhAuUAZ-jmxXqQs-1VwowVA/viewform?usp=sharing';" value="Something on your mind?" />
-	
-	<div class="dropdown">
-	  <button class="dropbtn">Explore</button>
-	  <div id="myDropdown" class="dropdown-content">
-		<a href="index.html">main</a>
-		<a href="halloflove.html">hall of love</a>
-		<a href="blog.html">blog</a>
-		<a href="contact.html">contact</a>
-	  </div>
-	</div>
-</div>	
-</head>	
-
+	<!-- Classic Comic Sans & Neon Style -->
+	<style>
+		body {
+			background: url('tile-bg.gif') repeat; /* tiled background for 2000s feel */
+			color: lime;
+			font-family: "Comic Sans MS", "Comic Sans", cursive;
+			text-align: center;
+		}
+		h1 {
+			font-size: 3em;
+			color: cyan;
+			text-shadow: 2px 2px 5px magenta;
+		}
+		.blink {
+			animation: blinker 0.8s linear infinite;
+			color: yellow;
+			font-weight: bold;
+		}
+		@keyframes blinker {
+			50% { opacity: 0; }
+		}
+		hr {
+			border: 2px dashed pink;
+		}
+		.counter {
+			font-size: 1.2em;
+			color: white;
+			background: darkblue;
+			padding: 5px;
+			display: inline-block;
+		}
+		.footer-gif {
+			width: 100px;
+			margin: 10px;
+		}
+	</style>
+</head>
 <body>
-<h1 style="
-  background-image: url('purpleback.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 40px;
-  text-align: center;
-  ">Peroko's webpage<h1>
 
-<p>An archive of my own</p>
+	<!-- Scrolling marquee -->
+	<marquee behavior="scroll" direction="left" scrollamount="6">
+		🌟 Welcome to Peroko's Retro Webpage 🌟 Best viewed in Internet Explorer 6! 🚀
+	</marquee>
 
-<button id="openModal" style="cursor: pointer">LIMINALITIES</button>
+	<h1>✨ Peroko's Webpage ✨</h1>
+	<p class="blink">An archive of my own... Y2K edition!</p>
 
-<div class="modal-overlay">
-<div class="modal">
-  <p>Liminalities</p>
+	<!-- Classic Under Construction GIF -->
+	<img src="under-construction.gif" alt="Under Construction">
 
-  <div class="liminality-gallery">
-      <p>Pictures I've taken of liminal  spaces:</p>
-      <img src="liminality 1.jpg" alt="liminality1" class="limipics">
-      <img src="liminality 2.jpg" alt="liminality2" class="limipics">
-      <img src="liminality 3.jpg" alt="liminality3" class="limipics">
-      <img src="liminality 4.jpg" alt="liminality4" class="limipics">
-      <img src="liminality 5.jpg" alt="liminality5" class="limipics">
-      <img src="liminality 6.jpg" alt="liminality6" class="limipics">
-      <img src="liminality 7.jpg" alt="liminality7" class="limipics">
-      <img src="liminality 8.jpg" alt="liminality8" class="limipics">
-  </div>
+	<br><br>
+	<button id="openModal" style="cursor: pointer">🌌 LIMINALITIES 🌌</button>
 
-  <button class="close-btn" id="closeModal" style="cursor: pointer">Close</button>
-</div>
-</div>
+	<div class="modal-overlay">
+		<div class="modal">
+		  <p>Liminalities</p>
+		  <p>Pictures I've taken of liminal spaces:</p>
+		  <img src="liminality 1.jpg" alt="liminality1" class="limipics">
+		  <img src="liminality 2.jpg" alt="liminality2" class="limipics">
+		  <img src="liminality 3.jpg" alt="liminality3" class="limipics">
+		  <img src="liminality 4.jpg" alt="liminality4" class="limipics">
+		</div>
+		<button class="close-btn" id="closeModal" style="cursor: pointer">Close</button>
+	</div>
 
+	<hr>
 
-<br>
+	<!-- Egg interaction stays -->
+	<div>
+		<img id="egg"
+		  src="egg_closed.png"
+		  style="cursor: pointer"
+		  onmouseover="this.src='egg_opened.png';"
+		  onmouseout="this.src='egg_closed.png';"
+		  onclick="this.src='egg_ate.png';"
+		/>
+	</div>
 
-<div class="grid-container">
-<img
-  id="egg"
-  src="egg_closed.png"
-  style="cursor: pointer"
-  onmouseover="this.src='egg_opened.png';"
-  onmouseout="this.src='egg_closed.png';"
-  onclick="this.src='egg_ate.png';"
-/>
+	<hr>
 
-<img src="lightscars.gif" alt="moving lightscars" class="lightscars">
-</div>
+	<!-- Visitor Counter -->
+	<p class="counter">👀 You are visitor number: <span id="counter">1234</span></p>
 
-<footer>
-  <p>Stay delusional.</p>
-</footer>
+	<hr>
 
-<script>
-  const modal = document.querySelector('.modal');
-  const modalOverlay = document.querySelector('.modal-overlay');
-  const openModal = document.getElementById('openModal');
-  const closeModal = document.getElementById('closeModal');
+	<footer>
+		<p>Stay delusional. 🤯</p>
+		<img src="dancing-baby.gif" class="footer-gif" alt="Dancing Baby">
+		<img src="sparkle.gif" class="footer-gif" alt="Sparkles">
+	</footer>
 
-  // Prevent clicks inside the modal from closing it
-  modal.addEventListener('click', (event) => {
-    event.stopPropagation();
-  });
+	<script>
+	  // modal logic
+	  const modal = document.querySelector('.modal');
+	  const modalOverlay = document.querySelector('.modal-overlay');
+	  const openModal = document.getElementById('openModal');
+	  const closeModal = document.getElementById('closeModal');
 
-  // Show modal and close button
-  openModal.addEventListener('click', () => {
-    modal.classList.add('show');
-    modal.style.display = 'block';
-    modalOverlay.style.display = 'block';
-  });
+	  modal.addEventListener('click', (event) => {
+	    event.stopPropagation();
+	  });
 
-  // Hide modal and close button
-  closeModal.addEventListener('click', () => {
-    modal.classList.remove('show');
-    modal.style.display = 'none';
-    modalOverlay.style.display = 'none';
-  });
+	  openModal.addEventListener('click', () => {
+	    modal.style.display = 'block';
+	    modalOverlay.style.display = 'block';
+	  });
 
-  // Hide modal when clicking outside
-  modalOverlay.addEventListener('click', () => {
-    modal.classList.remove('show');
-    modal.style.display = 'none';
-    modalOverlay.style.display = 'none';
-  });
-</script>
+	  closeModal.addEventListener('click', () => {
+	    modal.style.display = 'none';
+	    modalOverlay.style.display = 'none';
+	  });
+
+	  modalOverlay.addEventListener('click', () => {
+	    modal.style.display = 'none';
+	    modalOverlay.style.display = 'none';
+	  });
+	</script>
 
 </body>
 </html>
