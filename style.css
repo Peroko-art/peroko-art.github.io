@@ -76,6 +76,7 @@ h1 {
 	text-align: center;
 	font-size: 350%;
   margin-top: 10%; 
+	text-shadow: 2px 2px 5px magenta;
 }
 
 p{
@@ -231,3 +232,4 @@ figcaption {
 .modal.show .close-btn {
   display: inline-block; /* show only when modal has 'show' class */
 }
+
