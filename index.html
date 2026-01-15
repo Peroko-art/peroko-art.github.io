@@ -74,7 +74,7 @@
     <a href="contact.html">Contact</a><br>
     <br>
 
-    <button id="openModal">Liminalities</button>
+    <button id="openModal" style="cursor: pointer">Liminalities</button>
     <div class="modal-overlay">
         <div class="modal">
             <p>Liminalities</p>
@@ -129,24 +129,37 @@
     </center>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
+        window.onload = () => {
         const openBtn = document.getElementById("openModal");
         const closeBtn = document.getElementById("closeModal");
         const overlay = document.querySelector(".modal-overlay");
+        const modal = document.querySelector(".modal");
 
-        if (!openBtn || !closeBtn || !overlay) {
-            console.error("Modal elements not found", { openBtn, closeBtn, overlay });
-            return;
-        }
-
+        // open
         openBtn.addEventListener("click", () => {
             overlay.style.display = "flex";
         });
 
+        // close button
         closeBtn.addEventListener("click", () => {
             overlay.style.display = "none";
         });
+
+        // click outside the modal
+        overlay.addEventListener("click", (e) => {
+            if (e.target === overlay) {
+            overlay.style.display = "none";
+            }
         });
+
+        // ESC key
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+            overlay.style.display = "none";
+            }
+        });
+        };
     </script>
+
 </body>
 </html>
