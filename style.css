@@ -18,40 +18,35 @@
   margin: 0 auto;
 }
 
-.modal {
-  overflow-y: auto;
-  display: none; /* Hidden by default */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000; /* Ensure it's above other elements */
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Overlay for background */
 .modal-overlay {
-  overflow-y: auto;
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999; /* Below modal but above page */
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #220022;
+  border: 3px solid hotpink;
+  padding: 20px;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  color: cyan;
 }
 
 .close-btn {
-  background: #e74c3c;
-  color: white;
+  background: hotpink;
   border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  display: none; /* hide by default */
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .modal.show .close-btn {
