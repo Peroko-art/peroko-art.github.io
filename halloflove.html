@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PEROKO'S WEBPAGE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-image: url('2000bckgrnd.webp');
+            background-repeat: repeat;
+            font-family: "Comic Sans MS", "Times New Roman", serif;
+            color: #00ffcc;
+        }
+        a {
+            color: yellow;
+            text-decoration: none;
+        }
+        a:hover {
+            color: hotpink;
+            background: black;
+        }
+        table {
+            border: 3px ridge #ff00ff;
+            background: #000033;
+        }
+        td {
+            padding: 10px;
+        }
+        h1 {
+            font-size: 42px;
+            color: #ff66ff;
+            text-shadow: 2px 2px #000;
+        }
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% {opacity: 1;}
+            50% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        .sidebar {
+            background: #330033;
+            border: 2px dotted cyan;
+        }
+
+        .post {
+            background: #111122;
+            border: 2px dashed #ff00ff;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <marquee behavior="alternate" scrollamount="8">
+    <h1>~*~ That which I love ~*~</h1>
+    </marquee>
+
+    <p class="blink">Let me share with you some (mostly) digital trinkets that have made me ever so happy.</p>
+
+    <table width="90%">
+    <tr>
+
+    <td width="20%" class="sidebar" valign="top">
+    <b>MY LINKS</b><br><br>
+    <a href="index.html">Home</a><br>
+    <a href="halloflove.html">Hall of Love</a><br>
+    <a href="blog.html">Blog</a><br>
+    <a href="contact.html">Contact</a><br>
+    <br><br><br>
+
+    <img src="pfp1.png" style="max-width: 100%;"><br>
+    </td>
+
+    <td width="80%" valign="top">
+
+    <div class="post"> 
+        <font size="5" color="cyan">✧✧ ✧✧</font><br>
+        <i>Month numeral, year</i><br><br>
+        blah blah blah
+    </div>
+
+    <div class="post"> 
+        <font size="5" color="cyan">✧✧ ✧✧</font><br>
+        <i>Month numeral, year</i><br><br>
+        blah blah blah
+    </div>
+
+    <div class="post">
+        <font size="5" color="hotpink">✧  ✧</font><br>
+        <i>Month numeral, year</i><br><br>
+        blah blah blah
+    </div>
+
+    </td>
+    </tr>
+    </table>
+
+    <br>
+    <center>
+        <img src="banner.jpg" style="max-width: 50%">
+        <p>Remain delusional</p>
+    </center>
+
+    <script>
+        window.onload = () => {
+        const openBtn = document.getElementById("openModal");
+        const closeBtn = document.getElementById("closeModal");
+        const overlay = document.querySelector(".modal-overlay");
+        const modal = document.querySelector(".modal");
+
+        // open
+        openBtn.addEventListener("click", () => {
+            overlay.style.display = "flex";
+        });
+
+        // close button
+        closeBtn.addEventListener("click", () => {
+            overlay.style.display = "none";
+        });
+
+        // click outside the modal
+        overlay.addEventListener("click", (e) => {
+            if (e.target === overlay) {
+            overlay.style.display = "none";
+            }
+        });
+
+        // ESC key
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+            overlay.style.display = "none";
+            }
+        });
+        };
+    </script>
+
+</body>
+</html>
