@@ -59,3 +59,15 @@
   width:10%;
   height: 10%;
 }
+
+.picturelinks {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.picturelinks:hover {
+  transform: scale(1.05);
+}
+
