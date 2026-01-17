@@ -52,3 +52,10 @@
 .modal.show .close-btn {
   display: inline-block; /* show only when modal has 'show' class */
 }
+
+.linkeroos{
+	text-decoration: none;
+	margin:10px;
+  width:10%;
+  height: 10%;
+}
