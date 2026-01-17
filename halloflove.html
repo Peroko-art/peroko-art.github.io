@@ -74,7 +74,7 @@
     <a href="contact.html">Contact</a><br>
     <br><br><br>
 
-    <img src="pfp1.png" style="max-width: 100%;"><br>
+    <img src="pfp1.png" id="pfp" style="max-width: 100%; cursor: pointer;" onclick="togglePfp()"><br> <br>
     <input class="submit" type="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfwBBgxOO6vhaScJa6Yi4lkBJ5JhAuUAZ-jmxXqQs-1VwowVA/viewform?usp=sharing';" value="Talk to me" style="cursor: pointer"/>    
     </td>
 
@@ -379,6 +379,22 @@
             }
         });
         };
+    </script>
+
+    <script>
+        let pfpToggled = false;
+
+        function togglePfp() {
+            const pfp = document.getElementById("pfp");
+
+            if (pfpToggled) {
+                pfp.src = "pfp1.png";
+            } else {
+                pfp.src = "pfp2.png";
+            }
+
+            pfpToggled = !pfpToggled;
+        }
     </script>
 
 </body>
